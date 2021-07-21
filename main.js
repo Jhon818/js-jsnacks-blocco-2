@@ -21,12 +21,26 @@
 
 
 // Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
-var numberInteger = [1,2,3,4,5,6,7,8,9]
-var sum = 0;
+// var numberInteger = [1,2,3,4,5,6,7,8,9]
+// var sum = 0;
 
-for (var i = 0; i < numberInteger.length; i++){
-    if (i %2 == 1) {
-        sum=sum+i;
-        console.log(sum)
-        }
+// for (var i = 0; i < numberInteger.length; i++){
+//     if (i %2 == 1) {
+//         sum=sum+i;
+//         console.log(sum)
+//         }
+// }
+
+// Crea due array che hanno un numero di elementi diversi.
+// Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+
+var array1 = [1,2,3,4,5];
+var array2 = ["nome","cognome","secondonome"];
+
+for (i = 0; i < array1.length; i++) {
+    if(array2.length < array1.length) {
+        array2.push("terzonome" , "quartonome");
+        console.log(array2);
+    }
 }
+
